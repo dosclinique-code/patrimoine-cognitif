@@ -1,36 +1,96 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Patrimoine-Cognitif.fr
 
-## Getting Started
+Site institutionnel dédié au **Patrimoine Cognitif** et au **Testament Éthique Numérique**, initiative d'[Aigyros](https://aigyros.com).
 
-First, run the development server:
+## Stack technique
+
+- **Next.js 16** (App Router, TypeScript)
+- **Tailwind CSS v4**
+- **Framer Motion** — animations
+- **react-hook-form + Zod** — formulaire de contact
+- **Lucide React** — icônes (imports nommés, tree-shaking)
+
+## Installation
+
+```bash
+npm install
+```
+
+Copier les variables d'environnement :
+
+```bash
+cp .env.example .env.local
+```
+
+## Développement
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Ouvrir [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+Le **sitemap** (`/sitemap.xml`) et le **robots.txt** sont générés automatiquement par Next.js à partir de `app/sitemap.ts` et `app/robots.ts` — aucune étape post-build requise.
 
-To learn more about Next.js, take a look at the following resources:
+## Variables d'environnement
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+| Variable | Description | Exemple |
+|---|---|---|
+| `NEXT_PUBLIC_SITE_URL` | URL canonique du site (SEO, sitemap) | `https://patrimoine-cognitif.fr` |
+| `CONTACT_EMAIL_DESTINATION` | Destinataire des formulaires de contact | `contact@aigyros.com` |
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Structure des pages
 
-## Deploy on Vercel
+| Route | Description |
+|---|---|
+| `/` | Page d'accueil |
+| `/manifeste` | Manifeste fondateur |
+| `/testament-ethique` | 12 questions (FAQ + JSON-LD) |
+| `/charte` | 4 principes (scroll snap) |
+| `/contact` | Formulaire confidentiel |
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## SEO
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Métadonnées globales dans `lib/metadata.ts`
+- Image Open Graph générée via `app/opengraph-image.tsx`
+- Schema.org `Organization` (layout) + `FAQPage` (`/testament-ethique`)
+- Sitemap et robots.txt dynamiques
+
+Pour tester le JSON-LD FAQ : [Google Rich Results Test](https://search.google.com/test/rich-results)
+
+## Déploiement
+
+### Vercel (recommandé)
+
+1. Pousser le repo sur GitHub
+2. Importer le projet sur [vercel.com](https://vercel.com)
+3. Configurer les variables d'environnement
+4. Déployer — le build Next.js génère automatiquement sitemap et OG image
+
+### OVHcloud / VPS
+
+```bash
+npm run build
+npm start
+# ou via PM2 : pm2 start npm --name patrimoine-cognitif -- start
+```
+
+Configurer un reverse proxy (Nginx) avec HTTPS et pointer le domaine `patrimoine-cognitif.fr`.
+
+## Contenu éditorial
+
+Les fichiers sources de contenu se trouvent à la racine :
+
+- `SPEC.md`
+- `CONTENT_MANIFESTE.md`
+- `CONTENT_12_QUESTIONS.md`
+- `CONTENT_CHARTE.md`
+
+Les textes structurés pour le code sont dans `lib/` (`content.ts`, `questions.ts`, `charte.ts`).
