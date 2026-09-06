@@ -30,19 +30,19 @@ export const POURQUOI = [
     titre: "L'urgence de la préservation",
     texte:
       "Nous laissons des traces numériques considérables, mais ces traces sont souvent chaotiques, dispersées et définitivement perdues. Il devient urgent de structurer ce qui mérite d'être transmis, de séparer le bruit du signal fondateur.",
-    icone: "Archive",
+    icone: "Brain",
   },
   {
     titre: "La souveraineté retrouvée",
     texte:
       "La mémoire d'une lignée ne peut être soumise aux lois extraterritoriales. Architecture air-gap, chiffrement militaire, zéro GAFAM — la souveraineté numérique est la condition sine qua non de la liberté mémorielle.",
-    icone: "Shield",
+    icone: "Scale",
   },
   {
     titre: "La transmission vivante",
     texte:
       "Le patrimoine cognitif est actif et relationnel. Il permet à un descendant d'interroger le raisonnement de son aïeul face à une décision économique, sa philosophie de l'éducation, la genèse de ses choix stratégiques.",
-    icone: "MessageCircle",
+    icone: "Share2",
   },
 ] as const;
 

@@ -94,7 +94,7 @@ export default function TableOfContents({
       <div className="lg:hidden mb-10">
         <button
           onClick={() => setIsMobileOpen((v) => !v)}
-          className="w-full flex items-center justify-between bg-emeraude/50 border border-or/20 px-5 py-3 rounded-t-lg"
+          className="w-full flex items-center justify-between bg-gris border border-bordure px-5 py-3 rounded-t-lg"
           aria-expanded={isMobileOpen}
           aria-label="Ouvrir le sommaire"
         >
@@ -110,7 +110,7 @@ export default function TableOfContents({
         </button>
 
         {isMobileOpen && (
-          <div className="bg-emeraude/50 border border-t-0 border-or/15 px-5 py-4 rounded-b-lg">
+          <div className="bg-gris border border-t-0 border-bordure px-5 py-4 rounded-b-lg">
             <Links />
           </div>
         )}

@@ -8,14 +8,14 @@ import { Loader2 } from "lucide-react";
 import { contactSchema, type ContactFormData } from "@/lib/contact-schema";
 
 const inputClass = [
-  "w-full bg-emeraude/40 border border-or/20 text-creme font-sans text-base",
-  "px-4 py-3 rounded-lg placeholder:text-creme/30",
-  "focus:outline-none focus:border-or focus:ring-1 focus:ring-or/20",
+  "w-full bg-blanc border border-bordure text-marine font-sans text-base",
+  "px-4 py-3 rounded-lg placeholder:text-texte-leger",
+  "focus:outline-none focus:border-marine focus:ring-1 focus:ring-marine/15",
   "transition-colors duration-200",
 ].join(" ");
 
 const labelClass =
-  "block text-xs uppercase tracking-[0.18em] text-creme/50 font-sans mb-2";
+  "block text-xs uppercase tracking-[0.18em] text-texte-muted font-sans mb-2";
 
 export default function ContactForm() {
   const [submitState, setSubmitState] = useState<
@@ -74,10 +74,10 @@ export default function ContactForm() {
   if (submitState === "success") {
     return (
       <div className="card-surface p-8 text-center">
-        <p className="font-serif text-2xl text-creme mb-3">
+        <p className="font-serif text-2xl text-marine mb-3">
           Demande transmise avec succès
         </p>
-        <p className="text-creme/60 font-sans text-sm leading-relaxed">
+        <p className="text-texte-muted font-sans text-sm leading-relaxed">
           Votre message a été enregistré de manière sécurisée. Un conseiller
           Aigyros vous répondra dans les meilleurs délais, en toute
           confidentialité.
@@ -85,7 +85,7 @@ export default function ContactForm() {
         <button
           type="button"
           onClick={() => setSubmitState("idle")}
-          className="mt-6 text-or text-sm tracking-wider underline underline-offset-4 hover:text-or/70 transition-colors font-sans"
+          className="mt-6 text-marine text-sm tracking-wider underline underline-offset-4 hover:text-marine-clair transition-colors font-sans"
         >
           Envoyer une autre demande
         </button>
@@ -95,10 +95,9 @@ export default function ContactForm() {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} noValidate className="space-y-5">
-      {/* Nom complet */}
       <div>
         <label htmlFor="fullName" className={labelClass}>
-          Nom complet <span className="text-or">*</span>
+          Nom complet <span className="text-marine">*</span>
         </label>
         <input
           id="fullName"
@@ -108,13 +107,12 @@ export default function ContactForm() {
           {...register("fullName")}
         />
         {errors.fullName && (
-          <p className="mt-1.5 text-sm text-red-400 font-sans" role="alert">
+          <p className="mt-1.5 text-sm text-red-500 font-sans" role="alert">
             {errors.fullName.message}
           </p>
         )}
       </div>
 
-      {/* Organisation */}
       <div>
         <label htmlFor="organization" className={labelClass}>
           Organisation / Family Office / Étude
@@ -129,10 +127,9 @@ export default function ContactForm() {
         />
       </div>
 
-      {/* Email */}
       <div>
         <label htmlFor="email" className={labelClass}>
-          Email professionnel <span className="text-or">*</span>
+          Email professionnel <span className="text-marine">*</span>
         </label>
         <input
           id="email"
@@ -142,16 +139,15 @@ export default function ContactForm() {
           {...register("email")}
         />
         {errors.email && (
-          <p className="mt-1.5 text-sm text-red-400 font-sans" role="alert">
+          <p className="mt-1.5 text-sm text-red-500 font-sans" role="alert">
             {errors.email.message}
           </p>
         )}
       </div>
 
-      {/* Message */}
       <div>
         <label htmlFor="message" className={labelClass}>
-          Message <span className="text-or">*</span>
+          Message <span className="text-marine">*</span>
         </label>
         <textarea
           id="message"
@@ -161,40 +157,39 @@ export default function ContactForm() {
           {...register("message")}
         />
         {errors.message && (
-          <p className="mt-1.5 text-sm text-red-400 font-sans" role="alert">
+          <p className="mt-1.5 text-sm text-red-500 font-sans" role="alert">
             {errors.message.message}
           </p>
         )}
       </div>
 
-      {/* Consentement RGPD */}
       <div>
         <label className="flex items-start gap-3 cursor-pointer group">
           <input
             type="checkbox"
-            className="mt-1 shrink-0 accent-or w-4 h-4 bg-emeraude border border-or/30 rounded"
+            className="mt-1 shrink-0 accent-marine w-4 h-4 bg-blanc border border-bordure rounded"
             {...register("consent")}
           />
-          <span className="text-sm text-creme/60 font-sans leading-relaxed group-hover:text-creme/80 transition-colors">
+          <span className="text-sm text-texte-muted font-sans leading-relaxed group-hover:text-marine transition-colors">
             J&apos;accepte que ces données soient traitées conformément à la{" "}
             <Link
               href="/confidentialite"
-              className="text-or underline underline-offset-2 hover:text-or/70"
+              className="text-marine underline underline-offset-2 hover:text-marine-clair"
             >
               politique de confidentialité
             </Link>{" "}
-            d&apos;Aigyros. <span className="text-or">*</span>
+            d&apos;Aigyros. <span className="text-marine">*</span>
           </span>
         </label>
         {errors.consent && (
-          <p className="mt-1.5 text-sm text-red-400 font-sans" role="alert">
+          <p className="mt-1.5 text-sm text-red-500 font-sans" role="alert">
             {errors.consent.message}
           </p>
         )}
       </div>
 
       {serverError && (
-        <p className="text-sm text-red-400 font-sans text-center" role="alert">
+        <p className="text-sm text-red-500 font-sans text-center" role="alert">
           {serverError}
         </p>
       )}
@@ -203,9 +198,9 @@ export default function ContactForm() {
         type="submit"
         disabled={submitState === "loading"}
         className={[
-          "w-full bg-or text-noir font-sans font-semibold text-sm tracking-[0.12em] uppercase",
-          "py-4 mt-2",
-          "hover:bg-or/90 transition-colors duration-300",
+          "w-full bg-marine text-blanc font-sans font-semibold text-sm tracking-[0.12em] uppercase",
+          "py-4 mt-2 rounded-md",
+          "hover:bg-marine-clair transition-colors duration-300",
           "disabled:opacity-50 disabled:cursor-not-allowed",
           "flex items-center justify-center gap-2",
         ].join(" ")}

@@ -1,25 +1,30 @@
 @import "tailwindcss";
 
 /* ── Design Tokens ──────────────────────────────────────────────────────────
-   Tailwind v4 @theme registers all tokens as Tailwind utilities.
-   --color-* → bg-*, text-*, border-* utilities
-   --font-*  → font-* utilities
+   Palette institutionnelle — blanc + marine profond
    ──────────────────────────────────────────────────────────────────────── */
 
 @theme {
-  /* Palette patrimoniale — vert forêt + or */
-  --color-noir:       #05100a;
-  --color-anthracite: #0c1f16;
-  --color-foret:      #0a1a14;
-  --color-emeraude:   #132a1f;
-  --color-or:         #c5a368;
-  --color-cuivre:     #a67c3d;
-  --color-creme:      #e8e4d9;
-  /* Alias rétrocompat — anciennes classes marine → vert forêt */
-  --color-marine:     #0a1a14;
+  --color-blanc:      #ffffff;
+  --color-fond:       #fafbfc;
+  --color-gris:       #f0f2f5;
+  --color-marine:     #1b2d4f;
+  --color-marine-clair: #2d4470;
+  --color-texte:      #1b2d4f;
+  --color-texte-muted: #5c6b7f;
+  --color-texte-leger: #8b97a8;
+  --color-bordure:    rgba(27, 45, 79, 0.1);
+
+  /* Alias sémantiques — compatibilité classes existantes */
+  --color-noir:       #ffffff;
+  --color-anthracite: #f4f6f9;
+  --color-foret:      #ffffff;
+  --color-emeraude:   #f0f2f5;
+  --color-or:         #1b2d4f;
+  --color-cuivre:     #2d4470;
+  --color-creme:      #1b2d4f;
 }
 
-/* Polices : référence les variables CSS injectées par next/font/google */
 @theme inline {
   --font-serif: var(--font-playfair), "Playfair Display", Georgia, serif;
   --font-sans:  var(--font-inter), Inter, system-ui, sans-serif;
@@ -32,52 +37,47 @@ html {
 }
 
 body {
-  background-color: #05100a;
-  color: #e8e4d9;
+  background-color: #ffffff;
+  color: #1b2d4f;
   font-family: var(--font-inter), Inter, system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Sélection de texte aux couleurs de la marque */
 ::selection {
-  background-color: rgba(197, 163, 104, 0.25);
-  color: #e8e4d9;
+  background-color: rgba(27, 45, 79, 0.12);
+  color: #1b2d4f;
 }
 
-/* Scrollbar discrète */
 ::-webkit-scrollbar {
   width: 4px;
 }
 ::-webkit-scrollbar-track {
-  background: #05100a;
+  background: #f0f2f5;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: #c5a368;
-  opacity: 0.4;
+  background-color: #1b2d4f;
+  opacity: 0.3;
   border-radius: 2px;
 }
 
-/* Alternance de sections — teinte vert émeraude légèrement plus claire */
 .section-alt {
-  background-color: rgba(19, 42, 31, 0.28);
-  border-top: 1px solid rgba(197, 163, 104, 0.06);
-  border-bottom: 1px solid rgba(197, 163, 104, 0.06);
+  background-color: #f4f6f9;
+  border-top: 1px solid rgba(27, 45, 79, 0.06);
+  border-bottom: 1px solid rgba(27, 45, 79, 0.06);
 }
 
-/* Surface carte — fond vert légèrement relevé + bordure dorée fine */
 .card-surface {
-  background-color: rgba(19, 42, 31, 0.55);
-  border: 1px solid rgba(197, 163, 104, 0.12);
+  background-color: #ffffff;
+  border: 1px solid rgba(27, 45, 79, 0.1);
   border-radius: 0.875rem;
   transition: border-color 0.4s ease, transform 0.4s ease, box-shadow 0.4s ease;
 }
 .card-surface:hover {
-  border-color: rgba(197, 163, 104, 0.28);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  border-color: rgba(27, 45, 79, 0.2);
+  box-shadow: 0 8px 32px rgba(27, 45, 79, 0.08);
 }
 
-/* Scrollbar masquée pour le conteneur scroll-snap de /charte (accessibilité clavier conservée) */
 .charte-scroll {
   scrollbar-width: none;
   -ms-overflow-style: none;

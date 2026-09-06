@@ -128,7 +128,7 @@ export default function AccordionItem({
 
           {/* Encart "À retenir" */}
           {question.aRetenir && (
-            <div className="flex gap-3 bg-emeraude/50 border-l-4 border-or p-5 mt-6 rounded-r-lg">
+            <div className="flex gap-3 bg-gris border-l-4 border-marine p-5 mt-6 rounded-r-lg">
               <Shield
                 size={18}
                 className="text-or shrink-0 mt-0.5"

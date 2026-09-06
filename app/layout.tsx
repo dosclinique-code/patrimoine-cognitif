@@ -35,7 +35,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       data-scroll-behavior="smooth"
       className={`${playfair.variable} ${inter.variable}`}
     >
-      <body className="min-h-screen flex flex-col text-creme antialiased">
+      <body className="min-h-screen flex flex-col text-marine antialiased">
         <SiteBackground className="fixed inset-0 -z-10" />
         <JsonLd data={globalSchema} />
         <Navbar />

@@ -4,7 +4,6 @@ export const runtime = "nodejs";
 export const size = { width: 180, height: 180 };
 export const contentType = "image/png";
 
-/** Icône Apple Touch — même emblème que favicon.svg, en haute résolution */
 export default function AppleIcon() {
   return new ImageResponse(
     (
@@ -15,9 +14,8 @@ export default function AppleIcon() {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          background: "#0a1a14",
+          background: "#1b2d4f",
           borderRadius: 40,
-          border: "3px solid rgba(197, 163, 104, 0.55)",
         }}
       >
         <svg
@@ -27,41 +25,14 @@ export default function AppleIcon() {
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <path
-            d="M16 24.5V11.5"
-            stroke="#c5a368"
-            strokeWidth="1.75"
-            strokeLinecap="round"
-          />
-          <path
-            d="M16 15.5C13.2 15.5 11.5 17.2 11.5 19"
-            stroke="#c5a368"
-            strokeWidth="1.5"
-            strokeLinecap="round"
-            fill="none"
-          />
-          <path
-            d="M16 15.5C18.8 15.5 20.5 17.2 20.5 19"
-            stroke="#c5a368"
-            strokeWidth="1.5"
-            strokeLinecap="round"
-            fill="none"
-          />
-          <path
-            d="M16 19.5C14.1 19.5 12.75 20.85 12.75 22.75"
-            stroke="#c5a368"
-            strokeWidth="1.5"
-            strokeLinecap="round"
-            fill="none"
-          />
-          <path
-            d="M16 19.5C17.9 19.5 19.25 20.85 19.25 22.75"
-            stroke="#c5a368"
-            strokeWidth="1.5"
-            strokeLinecap="round"
-            fill="none"
-          />
-          <circle cx="16" cy="9.5" r="2.25" fill="#c5a368" />
+          <path d="M16 22V14" stroke="#ffffff" strokeWidth="1.5" strokeLinecap="round" />
+          <path d="M16 22V26" stroke="#ffffff" strokeWidth="1.2" strokeLinecap="round" />
+          <path d="M16 24C14 24 13 25.5 12.5 27" stroke="#ffffff" strokeWidth="1" strokeLinecap="round" fill="none" />
+          <path d="M16 24C18 24 19 25.5 19.5 27" stroke="#ffffff" strokeWidth="1" strokeLinecap="round" fill="none" />
+          <path d="M16 14C13 14 11 12 10 9" stroke="#ffffff" strokeWidth="1.2" strokeLinecap="round" fill="none" />
+          <path d="M16 14C19 14 21 12 22 9" stroke="#ffffff" strokeWidth="1.2" strokeLinecap="round" fill="none" />
+          <path d="M16 17C13.5 17 12 15.5 11 14" stroke="#ffffff" strokeWidth="1" strokeLinecap="round" fill="none" />
+          <path d="M16 17C18.5 17 20 15.5 21 14" stroke="#ffffff" strokeWidth="1" strokeLinecap="round" fill="none" />
         </svg>
       </div>
     ),

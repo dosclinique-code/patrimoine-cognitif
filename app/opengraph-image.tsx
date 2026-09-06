@@ -5,7 +5,6 @@ export const alt = "Patrimoine Cognitif & Immatériel — Référence en transmi
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
-/** Image Open Graph générée dynamiquement (fallback si /public/og-image.jpg absent) */
 export default function OpenGraphImage() {
   return new ImageResponse(
     (
@@ -17,7 +16,7 @@ export default function OpenGraphImage() {
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
-          background: "linear-gradient(135deg, #05100a 0%, #0a1a14 100%)",
+          background: "linear-gradient(135deg, #ffffff 0%, #f0f2f5 100%)",
           padding: "60px",
         }}
       >
@@ -26,8 +25,9 @@ export default function OpenGraphImage() {
             fontSize: 22,
             letterSpacing: "0.3em",
             textTransform: "uppercase",
-            color: "#c5a368",
+            color: "#1b2d4f",
             marginBottom: 24,
+            opacity: 0.6,
           }}
         >
           Aigyros
@@ -36,7 +36,7 @@ export default function OpenGraphImage() {
           style={{
             fontSize: 64,
             fontWeight: 700,
-            color: "#e8e4d9",
+            color: "#1b2d4f",
             textAlign: "center",
             lineHeight: 1.15,
             marginBottom: 24,
@@ -49,7 +49,7 @@ export default function OpenGraphImage() {
             fontSize: 22,
             letterSpacing: "0.2em",
             textTransform: "uppercase",
-            color: "rgba(197,163,104,0.85)",
+            color: "rgba(27,45,79,0.7)",
             marginBottom: 16,
           }}
         >
@@ -58,7 +58,7 @@ export default function OpenGraphImage() {
         <p
           style={{
             fontSize: 28,
-            color: "rgba(232,228,217,0.65)",
+            color: "rgba(27,45,79,0.55)",
             textAlign: "center",
             maxWidth: 800,
           }}

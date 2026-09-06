@@ -4,15 +4,15 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence, type Variants } from "framer-motion";
+import Logo from "@/components/Logo";
 
 const NAV_LINKS = [
-  { label: "Manifeste",        href: "/manifeste" },
+  { label: "Manifeste",         href: "/manifeste" },
   { label: "Testament Éthique", href: "/testament-ethique" },
-  { label: "Charte",           href: "/charte" },
-  { label: "Contact",          href: "/contact" },
+  { label: "Charte",            href: "/charte" },
+  { label: "Contact",           href: "/contact" },
 ] as const;
 
-/* ── Variantes d'animation pour le menu mobile ──────────────────────────── */
 const overlayVariants = {
   hidden: { opacity: 0, x: "100%" },
   visible: {
@@ -40,14 +40,12 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
-  /* Détection du scroll pour l'effet de fond */
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  /* Verrouillage du scroll quand le menu mobile est ouvert */
   useEffect(() => {
     document.body.style.overflow = isOpen ? "hidden" : "";
     return () => { document.body.style.overflow = ""; };
@@ -59,7 +57,7 @@ export default function Navbar() {
         className={[
           "fixed top-0 left-0 right-0 z-50 transition-all duration-500",
           scrolled
-            ? "bg-foret/75 backdrop-blur-md border-b border-or/12 shadow-[0_1px_30px_rgba(0,0,0,0.45)]"
+            ? "bg-blanc/90 backdrop-blur-md border-b border-bordure shadow-[0_1px_20px_rgba(27,45,79,0.06)]"
             : "bg-transparent",
         ].join(" ")}
       >
@@ -68,27 +66,17 @@ export default function Navbar() {
           aria-label="Navigation principale"
         >
           <div className="flex items-center justify-between h-20">
+            <Logo />
 
-            {/* ── Logo ──────────────────────────────────────────────────── */}
-            <Link
-              href="/"
-              className="font-serif text-base tracking-[0.2em] text-creme hover:text-or transition-colors duration-300 uppercase"
-              aria-label="Patrimoine Cognitif — Accueil"
-            >
-              Patrimoine{" "}
-              <span className="text-or">Cognitif</span>
-            </Link>
-
-            {/* ── Liens desktop ─────────────────────────────────────────── */}
             <ul className="hidden md:flex items-center gap-8" role="list">
               {NAV_LINKS.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
                     className={[
-                      "text-sm tracking-[0.12em] text-creme/60",
-                      "hover:text-creme transition-colors duration-300",
-                      "font-sans uppercase",
+                      "text-sm tracking-[0.08em] text-texte-muted",
+                      "hover:text-marine transition-colors duration-300",
+                      "font-sans",
                     ].join(" ")}
                   >
                     {link.label}
@@ -97,15 +85,14 @@ export default function Navbar() {
               ))}
             </ul>
 
-            {/* ── CTA desktop ───────────────────────────────────────────── */}
             <div className="hidden md:flex">
               <Link
                 href="/manifeste"
                 className={[
-                  "bg-or text-noir text-xs tracking-[0.18em] uppercase font-medium",
-                  "px-5 py-2.5 font-sans rounded-sm",
-                  "hover:bg-cuivre",
-                  "shadow-[0_2px_16px_rgba(197,163,104,0.18)]",
+                  "bg-marine text-blanc text-xs tracking-[0.12em] uppercase font-medium",
+                  "px-5 py-2.5 font-sans rounded-md",
+                  "hover:bg-marine-clair",
+                  "shadow-[0_2px_12px_rgba(27,45,79,0.15)]",
                   "transition-all duration-300",
                   "hover:-translate-y-px",
                 ].join(" ")}
@@ -114,10 +101,9 @@ export default function Navbar() {
               </Link>
             </div>
 
-            {/* ── Bouton hamburger mobile ────────────────────────────────── */}
             <button
               onClick={() => setIsOpen((v) => !v)}
-              className="md:hidden text-creme/60 hover:text-or transition-colors duration-300 p-1"
+              className="md:hidden text-texte-muted hover:text-marine transition-colors duration-300 p-1"
               aria-label={isOpen ? "Fermer le menu" : "Ouvrir le menu"}
               aria-expanded={isOpen}
               aria-controls="mobile-menu"
@@ -133,7 +119,6 @@ export default function Navbar() {
         </nav>
       </header>
 
-      {/* ── Menu mobile ───────────────────────────────────────────────────── */}
       <AnimatePresence>
         {isOpen && (
           <motion.div
@@ -145,10 +130,9 @@ export default function Navbar() {
             initial="hidden"
             animate="visible"
             exit="exit"
-            className="md:hidden fixed inset-0 top-20 z-40 bg-foret/85 backdrop-blur-md"
+            className="md:hidden fixed inset-0 top-20 z-40 bg-blanc/95 backdrop-blur-md"
           >
-            {/* Ligne décorative dorée en haut */}
-            <div className="h-px w-full bg-gradient-to-r from-transparent via-or/40 to-transparent" />
+            <div className="h-px w-full bg-gradient-to-r from-transparent via-marine/15 to-transparent" />
 
             <div className="flex flex-col px-8 pt-10 pb-12 h-full">
               <ul role="list" className="flex flex-col">
@@ -164,9 +148,9 @@ export default function Navbar() {
                       href={link.href}
                       onClick={() => setIsOpen(false)}
                       className={[
-                        "block py-5 font-serif text-2xl text-creme/75",
-                        "hover:text-or hover:pl-2",
-                        "border-b border-or/10",
+                        "block py-5 font-serif text-2xl text-marine/80",
+                        "hover:text-marine hover:pl-2",
+                        "border-b border-bordure",
                         "transition-all duration-300",
                       ].join(" ")}
                     >
@@ -176,7 +160,6 @@ export default function Navbar() {
                 ))}
               </ul>
 
-              {/* CTA mobile */}
               <motion.div
                 custom={NAV_LINKS.length}
                 variants={linkItemVariants}
@@ -188,10 +171,10 @@ export default function Navbar() {
                   href="/manifeste"
                   onClick={() => setIsOpen(false)}
                   className={[
-                    "inline-block bg-or text-noir font-medium",
-                    "text-sm tracking-[0.18em] uppercase font-sans rounded-sm",
+                    "inline-block bg-marine text-blanc font-medium",
+                    "text-sm tracking-[0.12em] uppercase font-sans rounded-md",
                     "px-7 py-3.5",
-                    "hover:bg-cuivre",
+                    "hover:bg-marine-clair",
                     "transition-all duration-300",
                   ].join(" ")}
                 >
@@ -199,8 +182,7 @@ export default function Navbar() {
                 </Link>
               </motion.div>
 
-              {/* Signature discrète */}
-              <p className="mt-auto pt-8 text-xs tracking-widest text-creme/20 uppercase font-sans">
+              <p className="mt-auto pt-8 text-xs tracking-widest text-texte-leger uppercase font-sans">
                 © {new Date().getFullYear()} Patrimoine-Cognitif.fr
               </p>
             </div>

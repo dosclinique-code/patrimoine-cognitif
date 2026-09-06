@@ -16,7 +16,7 @@ export default function ReadingProgress() {
         scaleX: scrollYProgress,
         transformOrigin: "0% 50%",
       }}
-      className="fixed top-0 left-0 right-0 h-[3px] bg-or z-[60] pointer-events-none"
+      className="fixed top-0 left-0 right-0 h-[3px] bg-marine z-[60] pointer-events-none"
       aria-hidden="true"
     />
   );
