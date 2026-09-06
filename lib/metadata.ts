@@ -49,4 +49,7 @@ export const rootMetadata: Metadata = {
     description: DEFAULT_DESCRIPTION,
     images: [OG_IMAGE_PATH],
   },
+  verification: {
+    google: "bGV2pu0sY6dg9yDLvI8-Jfjtna6i9Bi-qIsm5S6UZkQ",
+  },
 };
