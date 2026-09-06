@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
+import AigyrosLogo from "@/components/icons/AigyrosLogo";
 
 const FOOTER_LINKS = [
   { label: "Manifeste",         href: "/manifeste" },
@@ -23,14 +23,7 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-6 lg:px-10 py-14">
         <div className="flex flex-col md:flex-row items-start justify-between gap-10 pb-10 border-b border-bordure">
           <div className="flex items-start gap-4">
-            <Image
-              src="/logo-aigyros.svg"
-              alt=""
-              width={48}
-              height={48}
-              className="shrink-0 mt-1"
-              aria-hidden="true"
-            />
+            <AigyrosLogo size={48} className="shrink-0 mt-1" />
             <div className="flex flex-col gap-2">
               <p className="text-[10px] tracking-[0.25em] text-texte-leger uppercase font-sans">
                 Une initiative de
