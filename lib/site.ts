@@ -1,6 +1,6 @@
 /** URL canonique du site — surchargeable via variable d'environnement */
 export const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://patrimoine-cognitif.fr";
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.patrimoine-cognitif.fr";
 
 export const SITE_NAME = "Patrimoine Cognitif";
 

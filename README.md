@@ -43,7 +43,7 @@ Le **sitemap** (`/sitemap.xml`) et le **robots.txt** sont générés automatique
 
 | Variable | Description | Exemple |
 |---|---|---|
-| `NEXT_PUBLIC_SITE_URL` | URL canonique du site (SEO, sitemap) | `https://patrimoine-cognitif.fr` |
+| `NEXT_PUBLIC_SITE_URL` | URL canonique du site (SEO, sitemap) | `https://www.patrimoine-cognitif.fr` |
 | `CONTACT_EMAIL_DESTINATION` | Destinataire des formulaires de contact | `contact@aigyros.com` |
 
 ## Structure des pages
