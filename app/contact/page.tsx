@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { MapPin, Lock } from "lucide-react";
+import { MapPin, Lock, Mail } from "lucide-react";
 import FadeIn from "@/components/ui/FadeIn";
-import ContactForm from "@/components/contact/ContactForm";
 import JsonLd from "@/components/seo/JsonLd";
+import { CONTACT_EMAIL } from "@/lib/contact-email";
 import { buildPageMetadata, breadcrumbSchema } from "@/lib/seo";
 
 export const metadata: Metadata = buildPageMetadata("/contact", {
@@ -43,10 +43,8 @@ export default function ContactPage() {
           </p>
         </FadeIn>
 
-        {/* ── 2 colonnes — formulaire en premier sur mobile ─────────────── */}
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-20 items-start">
 
-          {/* Colonne gauche : informations (2e sur mobile) */}
           <FadeIn delay={0.1} className="order-2 lg:order-1">
             <div className="lg:sticky lg:top-32 space-y-10">
               <p className="font-sans text-base text-creme/75 leading-relaxed">
@@ -55,7 +53,6 @@ export default function ContactPage() {
                 échange est traité avec la plus stricte confidentialité.
               </p>
 
-              {/* Bloc Siège */}
               <div className="flex gap-4">
                 <MapPin
                   size={22}
@@ -73,7 +70,6 @@ export default function ContactPage() {
                 </div>
               </div>
 
-              {/* Bloc Sécurité */}
               <div className="flex gap-4">
                 <Lock
                   size={22}
@@ -92,7 +88,6 @@ export default function ContactPage() {
                 </div>
               </div>
 
-              {/* Lien Aigyros */}
               <p className="text-xs tracking-wider text-creme/30 font-sans pt-4 border-t border-or/10">
                 Initiative portée par{" "}
                 <a
@@ -109,22 +104,28 @@ export default function ContactPage() {
             </div>
           </FadeIn>
 
-          {/* Colonne droite : formulaire (1er sur mobile) */}
           <FadeIn delay={0.05} className="order-1 lg:order-2">
-            <div className="card-surface p-6 md:p-8">
-              <ContactForm />
-            </div>
-
-            <p className="text-sm text-creme/45 font-sans mt-8 text-center leading-relaxed">
-              Pour une urgence ou une demande spécifique, vous pouvez également
-              nous écrire directement à :{" "}
+            <div className="card-surface p-8 md:p-10 text-center">
+              <Mail
+                size={32}
+                strokeWidth={1.3}
+                className="text-or mx-auto mb-6"
+                aria-hidden="true"
+              />
+              <h2 className="font-serif text-2xl text-creme mb-3">
+                Nous écrire
+              </h2>
+              <p className="font-sans text-sm text-creme/55 leading-relaxed mb-8 max-w-sm mx-auto">
+                Pour toute question, demande d&apos;accompagnement ou échange en
+                toute discrétion, contactez-nous par e-mail.
+              </p>
               <Link
-                href="mailto:contact@aigyros.com"
-                className="text-or/70 hover:text-or transition-colors underline underline-offset-2"
+                href={`mailto:${CONTACT_EMAIL}`}
+                className="inline-block font-sans text-lg text-or hover:text-or/80 transition-colors underline underline-offset-4 decoration-or/40"
               >
-                contact@aigyros.com
+                {CONTACT_EMAIL}
               </Link>
-            </p>
+            </div>
           </FadeIn>
         </div>
       </div>

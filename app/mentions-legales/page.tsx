@@ -3,6 +3,7 @@ import Link from "next/link";
 import FadeIn from "@/components/ui/FadeIn";
 import LegalSection from "@/components/legal/LegalSection";
 import JsonLd from "@/components/seo/JsonLd";
+import { CONTACT_EMAIL } from "@/lib/contact-email";
 import { buildPageMetadata, breadcrumbSchema } from "@/lib/seo";
 
 export const metadata: Metadata = buildPageMetadata("/mentions-legales", {
@@ -55,10 +56,10 @@ export default function MentionsLegalesPage() {
               <p>
                 Contact :{" "}
                 <Link
-                  href="mailto:contact@aigyros.com"
+                  href={`mailto:${CONTACT_EMAIL}`}
                   className="text-or hover:text-or/70 underline underline-offset-2"
                 >
-                  contact@aigyros.com
+                  {CONTACT_EMAIL}
                 </Link>
               </p>
             </LegalSection>
@@ -75,8 +76,8 @@ export default function MentionsLegalesPage() {
               <p>
                 Le site est hébergé en Europe, conformément aux exigences de
                 souveraineté numérique portées par la Charte de la Transmission
-                Souveraine. Les données de contact transmises via le formulaire
-                sont traitées dans le respect du RGPD (voir{" "}
+                Souveraine. Les données transmises lors d&apos;un contact par
+                e-mail sont traitées dans le respect du RGPD (voir{" "}
                 <Link
                   href="/confidentialite"
                   className="text-or hover:text-or/70 underline underline-offset-2"
@@ -116,10 +117,10 @@ export default function MentionsLegalesPage() {
                 peuvent subsister. L&apos;utilisateur est invité à signaler toute
                 inexactitude à{" "}
                 <Link
-                  href="mailto:contact@aigyros.com"
+                  href={`mailto:${CONTACT_EMAIL}`}
                   className="text-or hover:text-or/70 underline underline-offset-2"
                 >
-                  contact@aigyros.com
+                  {CONTACT_EMAIL}
                 </Link>
                 .
               </p>

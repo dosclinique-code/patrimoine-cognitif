@@ -7,7 +7,6 @@ Site institutionnel dédié au **Patrimoine Cognitif** et au **Testament Éthiqu
 - **Next.js 16** (App Router, TypeScript)
 - **Tailwind CSS v4**
 - **Framer Motion** — animations
-- **react-hook-form + Zod** — formulaire de contact
 - **Lucide React** — icônes (imports nommés, tree-shaking)
 
 ## Installation
@@ -44,7 +43,6 @@ Le **sitemap** (`/sitemap.xml`) et le **robots.txt** sont générés automatique
 | Variable | Description | Exemple |
 |---|---|---|
 | `NEXT_PUBLIC_SITE_URL` | URL canonique du site (SEO, sitemap) | `https://www.patrimoine-cognitif.fr` |
-| `CONTACT_EMAIL_DESTINATION` | Destinataire des formulaires de contact | `contact@aigyros.com` |
 
 ## Structure des pages
 
@@ -54,7 +52,7 @@ Le **sitemap** (`/sitemap.xml`) et le **robots.txt** sont générés automatique
 | `/manifeste` | Manifeste fondateur |
 | `/testament-ethique` | 12 questions (FAQ + JSON-LD) |
 | `/charte` | 4 principes (scroll snap) |
-| `/contact` | Formulaire confidentiel |
+| `/contact` | Contact par e-mail |
 
 ## SEO
 

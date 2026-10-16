@@ -3,6 +3,7 @@ import Link from "next/link";
 import FadeIn from "@/components/ui/FadeIn";
 import LegalSection from "@/components/legal/LegalSection";
 import JsonLd from "@/components/seo/JsonLd";
+import { CONTACT_EMAIL } from "@/lib/contact-email";
 import { buildPageMetadata, breadcrumbSchema } from "@/lib/seo";
 
 export const metadata: Metadata = buildPageMetadata("/confidentialite", {
@@ -54,31 +55,30 @@ export default function ConfidentialitePage() {
               <p>
                 Contact données personnelles :{" "}
                 <Link
-                  href="mailto:contact@aigyros.com"
+                  href={`mailto:${CONTACT_EMAIL}`}
                   className="text-or hover:text-or/70 underline underline-offset-2"
                 >
-                  contact@aigyros.com
+                  {CONTACT_EMAIL}
                 </Link>
               </p>
             </LegalSection>
 
             <LegalSection title="Données collectées">
               <p>
-                Via le{" "}
+                Si vous nous contactez par e-mail (voir la page{" "}
                 <Link
                   href="/contact"
                   className="text-or hover:text-or/70 underline underline-offset-2"
                 >
-                  formulaire de contact
+                  Contact
                 </Link>
-                , nous collectons uniquement les données que vous choisissez de
+                ), nous traitons uniquement les données que vous choisissez de
                 nous transmettre :
               </p>
               <ul className="list-disc pl-5 space-y-2 marker:text-or/50">
-                <li>nom et prénom ;</li>
                 <li>adresse e-mail ;</li>
-                <li>contenu de votre message ;</li>
-                <li>consentement explicite au traitement (case à cocher).</li>
+                <li>nom et prénom, le cas échéant ;</li>
+                <li>contenu de votre message et pièces jointes éventuelles.</li>
               </ul>
               <p>
                 Ce site ne recourt pas à Google Analytics ni à des traceurs
@@ -98,9 +98,10 @@ export default function ConfidentialitePage() {
                 <li>assurer le suivi de la relation initiée par votre message.</li>
               </ul>
               <p>
-                La base légale du traitement est votre consentement (article 6.1.a
-                du RGPD), recueilli via la case à cocher obligatoire du
-                formulaire.
+                La base légale du traitement est l&apos;exécution de mesures
+                précontractuelles prises à votre demande (article 6.1.b du RGPD)
+                et, le cas échéant, l&apos;intérêt légitime d&apos;Aigyros à
+                répondre à votre sollicitation (article 6.1.f du RGPD).
               </p>
             </LegalSection>
 
@@ -137,10 +138,10 @@ export default function ConfidentialitePage() {
               <p>
                 Pour exercer ces droits, écrivez à{" "}
                 <Link
-                  href="mailto:contact@aigyros.com"
+                  href={`mailto:${CONTACT_EMAIL}`}
                   className="text-or hover:text-or/70 underline underline-offset-2"
                 >
-                  contact@aigyros.com
+                  {CONTACT_EMAIL}
                 </Link>
                 . Vous pouvez également introduire une réclamation auprès de la
                 CNIL (
@@ -170,8 +171,9 @@ export default function ConfidentialitePage() {
               <p>
                 Aigyros met en œuvre des mesures techniques et organisationnelles
                 appropriées pour protéger vos données contre l&apos;accès non
-                autorisé, la perte ou la divulgation. Les échanges via le
-                formulaire de contact sont transmis de manière sécurisée.
+                autorisé, la perte ou la divulgation. Les échanges par
+                e-mail reposent sur la sécurité de votre messagerie et sur nos
+                processus internes de confidentialité.
               </p>
             </LegalSection>
           </FadeIn>
