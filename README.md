@@ -115,3 +115,5 @@ mention: "Histoire inspirée de situations réelles. Les personnages et les lieu
 `type` vaut `Histoire`, `Guide`, `Réflexion` ou `Actualité`. La mention est obligatoire pour une histoire, omise sinon. Le corps est du Markdown : paragraphes, titres `##`, listes, liens `[Manifeste](/manifeste#definition-patrimoine)`.
 
 Un article n’est public que si `draft` est `false` **et** si `date` est atteinte ou passée, en heure de Paris. Tant qu’il est masqué, il n’apparaît pas sur `/journal`, dans le flux RSS ni dans le sitemap. Au moment de publier, le corps doit contenir au moins un lien vers le Manifeste, le glossaire, la Charte ou le testament éthique.
+
+Le calendrier courant va du 2 novembre 2026 au 17 mai 2027 (seize textes). Sont publiés « Les carnets de Lucien » et « Testament éthique : exemples et méthode pour l'écrire » (19 octobre 2026). Les autres fichiers restent en `draft: true`, avec leur plan de titres en commentaire HTML.

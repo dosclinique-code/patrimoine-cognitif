@@ -1,14 +1,27 @@
 ---
 title: "Le mot de passe qu'Hélène a emporté avec elle"
-description: "Hélène a laissé sa pensée dans des comptes en ligne inaccessibles. Une histoire sur la fragilité de notre mémoire numérique quand nous ne sommes plus là."
-date: 2026-11-30
+description: "Hélène a laissé sa pensée dans des comptes en ligne que son fils ne peut pas ouvrir. Une histoire fictive sur la fragilité de notre mémoire numérique."
+date: 2027-02-08
 type: Histoire
 draft: true
 keyword: "que deviennent nos données après la mort"
-# Lien interne prévu : /glossaire#memoire-numerique
 mention: "Histoire inspirée de situations réelles. Les personnages et les lieux sont fictifs."
 ---
 
-Cet article n'est pas encore rédigé.
+<!--
+Plan H2 — brouillon, non publié.
 
-Il reste masqué tant que le champ draft est actif. Sa date de publication, encore future, le garde aussi hors ligne si le brouillon était levé trop tôt.
+Mention en tête : Histoire inspirée de situations réelles. Les personnages et les lieux sont fictifs.
+
+## Une pensée entière derrière des comptes fermés
+
+## Les démarches d'Antoine, et leurs limites
+
+## Ce qui était perdu : pas les fichiers, le raisonnement
+
+## Encadré → guide « Mort numérique »
+
+Liens internes prévus :
+- /journal/mort-numerique-souvenirs-en-ligne
+- /manifeste#principe-1
+-->

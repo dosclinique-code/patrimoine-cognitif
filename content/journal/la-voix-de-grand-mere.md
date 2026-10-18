@@ -1,14 +1,27 @@
 ---
 title: "La voix de grand-mère, que nous n'avons pas clonée"
-description: "Faut-il recréer la voix d'un proche disparu grâce à l'IA ? L'histoire d'une famille qui a choisi la mémoire plutôt que l'illusion d'une présence."
-date: 2027-01-25
+description: "Fallait-il recréer la voix de Rose grâce à l'IA ? L'histoire fictive d'une fratrie qui a choisi de transmettre sa pensée plutôt que l'illusion de sa présence."
+date: 2027-03-22
 type: Histoire
 draft: true
 keyword: "IA et deuil"
-# Lien interne prévu : /manifeste#principe-2
 mention: "Histoire inspirée de situations réelles. Les personnages et les lieux sont fictifs."
 ---
 
-Cet article n'est pas encore rédigé.
+<!--
+Plan H2 — brouillon, non publié.
 
-Il reste masqué tant que le champ draft est actif. Sa date de publication, encore future, le garde aussi hors ligne si le brouillon était levé trop tôt.
+Mention en tête : Histoire inspirée de situations réelles. Les personnages et les lieux sont fictifs.
+
+## La proposition de Paul
+
+## Le débat de la fratrie : réconfort ou illusion ?
+
+## Le choix de Sarah et Léa : rassembler les principes de Rose
+
+## Encadré → guides sur l'IA et sur l'enregistrement de la voix
+
+Liens internes prévus :
+- /journal/faire-revivre-un-proche-avec-l-ia
+- /journal/enregistrer-la-voix-de-ses-parents
+-->

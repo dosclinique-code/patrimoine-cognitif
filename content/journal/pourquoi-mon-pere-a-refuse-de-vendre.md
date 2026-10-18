@@ -1,14 +1,27 @@
 ---
 title: "Pourquoi mon père a refusé de vendre l'entreprise"
-description: "Face à une offre de rachat, Inès aurait voulu comprendre pourquoi son père avait dit non. Une histoire sur la transmission d'une vision en entreprise familiale."
-date: 2026-12-28
+description: "Face à une offre de rachat, Inès aurait voulu comprendre pourquoi son père avait dit non. Une histoire fictive sur la transmission d'une vision d'entreprise."
+date: 2027-05-17
 type: Histoire
 draft: true
-keyword: "transmission entreprise familiale"
-# Lien interne prévu : /manifeste#definition-patrimoine
+keyword: "transmission entreprise familiale valeurs"
 mention: "Histoire inspirée de situations réelles. Les personnages et les lieux sont fictifs."
 ---
 
-Cet article n'est pas encore rédigé.
+<!--
+Plan H2 — brouillon, non publié.
 
-Il reste masqué tant que le champ draft est actif. Sa date de publication, encore future, le garde aussi hors ligne si le brouillon était levé trop tôt.
+Mention en tête : Histoire inspirée de situations réelles. Les personnages et les lieux sont fictifs.
+
+## Une offre de rachat sur le bureau d'Inès
+
+## Ce que son père avait refusé, et dont personne ne connaît la raison
+
+## Chercher un raisonnement, pas un avis
+
+## Encadré → guide sur la transmission des valeurs en entreprise familiale
+
+Liens internes prévus :
+- /journal/entreprise-familiale-transmettre-ses-valeurs
+- /manifeste#definition-patrimoine
+-->

@@ -85,7 +85,10 @@ function renderBlock(block: Block, index: number) {
 }
 
 function parseBlocks(source: string): Block[] {
-  const lines = source.replace(/\r\n/g, "\n").split("\n");
+  const lines = source
+    .replace(/<!--[\s\S]*?-->/g, "")
+    .replace(/\r\n/g, "\n")
+    .split("\n");
   const blocks: Block[] = [];
   let index = 0;
 
