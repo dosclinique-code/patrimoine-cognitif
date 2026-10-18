@@ -1,5 +1,5 @@
 import Link from "next/link";
-import TreeLogo from "@/components/icons/TreeLogo";
+import BrandLogo from "@/components/icons/BrandLogo";
 
 interface LogoProps {
   className?: string;
@@ -13,7 +13,7 @@ export default function Logo({ className = "", showText = true }: LogoProps) {
       className={`flex items-center gap-3 group ${className}`}
       aria-label="Patrimoine Cognitif — Accueil"
     >
-      <TreeLogo
+      <BrandLogo
         size={40}
         className="shrink-0 transition-opacity duration-300 group-hover:opacity-80"
       />

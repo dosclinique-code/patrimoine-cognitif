@@ -72,6 +72,8 @@ export const organizationSchema = {
   "@id": `${SITE_URL}/#organization`,
   name: SITE_NAME,
   url: SITE_URL,
+  // Pastille bleu nuit : l'arbre blanc sur transparent disparaît sur le fond blanc de Google.
+  logo: `${SITE_URL}/icon-512.png`,
   description:
     "Référence d'expertise sur le patrimoine cognitif, le patrimoine immatériel et la transmission souveraine à l'ère numérique.",
   knowsAbout: [
