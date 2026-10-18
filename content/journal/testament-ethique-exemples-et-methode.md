@@ -1,9 +1,9 @@
 ---
 title: "Testament éthique : exemples et méthode pour l'écrire"
 description: "Exemples commentés et méthode en 5 étapes pour écrire votre testament éthique : transmettre vos valeurs et leçons de vie à vos proches, sans page blanche."
-date: 2026-11-02
+date: 2026-10-19
 type: Guide
-draft: true
+draft: false
 keyword: "testament éthique exemple"
 ---
 
@@ -17,7 +17,7 @@ Le [testament éthique](/glossaire#testament-ethique) est le document par lequel
 
 Il contient ce qui explique une vie sans prétendre la résumer : une valeur que l'on ne veut pas voir négociée en son absence, le récit d'une décision avec la contrainte qui l'a imposée, une gratitude précise, un conseil attaché à une situation plutôt qu'à toutes. Parfois un mot distinct pour chaque personne, parce que l'on n'écrit pas de la même façon à un enfant et à un associé.
 
-Il ne contient pas la répartition des biens. Ce rôle appartient au testament juridique. Les [douze questions](/testament-ethique#question-2) rappellent la différence déjà posée ici : l'un a une portée contraignante ; l'autre transmet l'immatériel et, en tant que tel, n'a pas cette force. Il ne contient pas non plus un double de vous. Le Manifeste le dit : c'est un phare, non une machine qui répondrait à votre place. Un texte qui décide pour les vivants n'est plus une transmission.
+Il ne contient pas la répartition des biens. Sur ce site, ce rôle est celui du testament juridique : les [douze questions](/testament-ethique#question-2) séparent le document qui dit où vont les choses et celui qui transmet des valeurs et des raisons. Cette page ne dit pas ce que le droit attache à l'un ou à l'autre. Il ne contient pas non plus un double de vous. Le Manifeste le dit : c'est un phare, non une machine qui répondrait à votre place. Un texte qui décide pour les vivants n'est plus une transmission.
 
 Les deux documents se complètent s'ils restent distincts. L'acte dit où vont les choses. La page dit pourquoi certaines choses comptaient. Aucun des deux ne fait le travail de l'autre.
 
@@ -85,15 +85,15 @@ Cette méthode ne fixe pas d'âge. Le moment utile est celui où vous pouvez enc
 
 ### Faut-il un notaire ?
 
-Le testament éthique décrit ici n'est pas l'acte qui répartit les biens. Pour cet acte, le notaire est l'interlocuteur, et les deux démarches gagnent à rester coordonnées plutôt que mêlées. Cette page ne dit pas ce que le droit exige.
+La page écrite ici n'est pas le document qui répartit les biens. Savoir s'il faut un notaire, et pour quel acte, est une question de droit à laquelle ce guide ne répond pas.
 
 <!-- SOURCE À CITER : règles de forme du testament en droit français, avant d'affirmer qu'un notaire est ou n'est pas obligatoire. -->
 
-Gardez les documents distincts. La page éthique reste lisible par ceux à qui elle s'adresse. Si vous voulez que le notaire sache qu'elle existe, indiquez-lui où elle se trouve. Ne lui demandez pas d'en faire un jugement.
+En attendant, gardez les textes distincts, pour que la page éthique reste lisible par ceux à qui elle s'adresse. Si vous voyez un notaire pour autre chose, vous pouvez lui indiquer où elle se trouve. Ce guide ne dit pas ce qu'il doit en faire.
 
 ### Peut-on l'enregistrer en audio ?
 
-Oui, comme un complément. La voix porte un ton que la page ne porte pas. Elle ne remplace pas le critère écrit : un enregistrement sans fil s'interroge mal. Ce guide n'attribue aucune force juridique au fichier.
+Oui, comme un complément. La voix porte un ton que la page ne porte pas. Elle ne remplace pas le critère écrit : un enregistrement sans fil s'interroge mal. Ce guide ne dit rien de la portée juridique d'un fichier sonore.
 
 <!-- SOURCE À CITER : valeur juridique d'un enregistrement sonore au regard du testament, avant d'affirmer qu'il vaut ou ne vaut pas acte. -->
 
