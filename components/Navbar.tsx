@@ -10,6 +10,7 @@ const NAV_LINKS = [
   { label: "Manifeste",         href: "/manifeste" },
   { label: "Testament Éthique", href: "/testament-ethique" },
   { label: "Charte",            href: "/charte" },
+  { label: "Journal",           href: "/journal" },
   { label: "Contact",           href: "/contact" },
 ] as const;
 
@@ -68,7 +69,7 @@ export default function Navbar() {
           <div className="flex items-center justify-between h-20">
             <Logo />
 
-            <ul className="hidden md:flex items-center gap-8" role="list">
+            <ul className="hidden lg:flex items-center gap-6 xl:gap-8" role="list">
               {NAV_LINKS.map((link) => (
                 <li key={link.href}>
                   <Link
@@ -85,7 +86,7 @@ export default function Navbar() {
               ))}
             </ul>
 
-            <div className="hidden md:flex">
+            <div className="hidden lg:flex">
               <Link
                 href="/manifeste"
                 className={[
@@ -103,7 +104,7 @@ export default function Navbar() {
 
             <button
               onClick={() => setIsOpen((v) => !v)}
-              className="md:hidden text-texte-muted hover:text-marine transition-colors duration-300 p-1"
+              className="lg:hidden text-texte-muted hover:text-marine transition-colors duration-300 p-1"
               aria-label={isOpen ? "Fermer le menu" : "Ouvrir le menu"}
               aria-expanded={isOpen}
               aria-controls="mobile-menu"
@@ -130,7 +131,7 @@ export default function Navbar() {
             initial="hidden"
             animate="visible"
             exit="exit"
-            className="md:hidden fixed inset-0 top-20 z-40 bg-blanc/95 backdrop-blur-md"
+            className="lg:hidden fixed inset-0 top-20 z-40 bg-blanc/95 backdrop-blur-md"
           >
             <div className="h-px w-full bg-gradient-to-r from-transparent via-marine/15 to-transparent" />
 

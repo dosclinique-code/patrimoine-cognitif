@@ -1,9 +1,19 @@
 import type { MetadataRoute } from "next";
+import {
+  JOURNAL_PATH,
+  articlePath,
+  getPublishedArticles,
+  journalDateToDate,
+} from "@/lib/journal";
 import { SITE_URL } from "@/lib/site";
 
 /** Généré automatiquement par Next.js à /sitemap.xml */
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date();
+  const articles = getPublishedArticles();
+  const journalLastModified = articles[0]
+    ? journalDateToDate(articles[0].date)
+    : lastModified;
 
   return [
     {
@@ -37,6 +47,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     {
+      url: `${SITE_URL}${JOURNAL_PATH}`,
+      lastModified: journalLastModified,
+      changeFrequency: "weekly",
+      priority: 0.8,
+    },
+    ...articles.map((article) => ({
+      url: `${SITE_URL}${articlePath(article.slug)}`,
+      lastModified: journalDateToDate(article.date),
+      changeFrequency: "yearly" as const,
+      priority: 0.6,
+    })),
+    {
       url: `${SITE_URL}/contact`,
       lastModified,
       changeFrequency: "yearly",
@@ -56,4 +78,3 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 }
-
