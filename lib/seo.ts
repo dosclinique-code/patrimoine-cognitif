@@ -118,11 +118,17 @@ export function articleSchema({
   description,
   path,
   datePublished,
+  dateModified,
+  section,
+  keywords,
 }: {
   headline: string;
   description: string;
   path: string;
   datePublished: string;
+  dateModified?: string;
+  section?: string;
+  keywords?: string | string[];
 }) {
   return {
     "@context": "https://schema.org",
@@ -130,7 +136,7 @@ export function articleSchema({
     headline,
     description,
     datePublished,
-    dateModified: datePublished,
+    dateModified: dateModified ?? datePublished,
     author: {
       "@type": "Organization",
       name: "Aigyros",
@@ -141,11 +147,15 @@ export function articleSchema({
       name: SITE_NAME,
       url: SITE_URL,
     },
+    image: `${SITE_URL}${OG_IMAGE_PATH}`,
     mainEntityOfPage: {
       "@type": "WebPage",
       "@id": `${SITE_URL}${path}`,
     },
     inLanguage: "fr-FR",
+    isAccessibleForFree: true,
+    ...(section ? { articleSection: section } : {}),
+    ...(keywords ? { keywords } : {}),
     about: ["Patrimoine cognitif", "Patrimoine immatériel", "Transmission souveraine"],
   };
 }

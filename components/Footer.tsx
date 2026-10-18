@@ -5,6 +5,7 @@ const FOOTER_LINKS = [
   { label: "Manifeste",         href: "/manifeste" },
   { label: "Testament Éthique", href: "/testament-ethique" },
   { label: "Charte",            href: "/charte" },
+  { label: "Journal",           href: "/journal" },
   { label: "Contact",           href: "/contact" },
 ] as const;
 
