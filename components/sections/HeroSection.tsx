@@ -28,11 +28,10 @@ export default function HeroSection() {
       <motion.div
         style={{ y: bgY }}
         className="absolute inset-0 z-0 will-change-transform"
-        aria-hidden="true"
       >
         <Image
           src="/images/hero-mountains.jpg"
-          alt=""
+          alt="Montagnes au lever du jour, symbole de transmission et de patrimoine durable"
           fill
           priority
           className="object-cover object-center"
