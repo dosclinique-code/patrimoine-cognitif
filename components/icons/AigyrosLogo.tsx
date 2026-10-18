@@ -8,11 +8,10 @@ export default function AigyrosLogo({ className = "", size = 48 }: AigyrosLogoPr
     // eslint-disable-next-line @next/next/no-img-element
     <img
       src="/images/logo-aigyros.png"
-      alt=""
+      alt="Logo Aigyros"
       width={size}
       height={size}
       className={`rounded-full object-cover ${className}`}
-      aria-hidden="true"
     />
   );
 }
