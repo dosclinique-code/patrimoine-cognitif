@@ -3,7 +3,7 @@ title: "Lettre à ses enfants avant sa mort : que leur écrire ?"
 description: "Que dire à ses enfants dans une lettre à lire après sa mort ? Une trame simple en 5 temps, des idées de lettres à échéance et les écueils à éviter."
 date: 2026-11-16
 type: Guide
-draft: true
+draft: false
 keyword: "lettre à ses enfants avant sa mort"
 ---
 
@@ -91,19 +91,13 @@ Une lettre que personne ne trouve n'a pas été écrite pour eux. Indiquez le pr
 
 Choisissez qui remettra les plis : une personne de confiance, qui accepte le rôle. Dites-le-lui, et précisez si chaque lettre ne doit être lue que par son destinataire.
 
-Ce guide ne dit pas qui, en droit, peut ouvrir un courrier après un décès, ni quelle valeur une lettre reçoit au regard d'un testament.
+Ce guide ne dit pas qui peut ouvrir le courrier arrivé au nom d'une personne décédée. [La Poste](https://aide.laposte.fr/contenu/comment-souscrire-un-contrat-de-reexpedition-pour-un-mineur-un-majeur-protege-ou-une-personne-decedee) indique qu'un héritier, ou un ayant droit, peut en demander la réexpédition. Il déclare sur l'honneur cette qualité, et présente le certificat de décès ainsi que le livret de famille ou, à défaut, un acte notarié. S'ils sont plusieurs, une procuration établie par le notaire est demandée. Réexpédier n'est pas ouvrir. La personne qui remet la lettre que vous avez écrite reste celle que vous avez choisie, et qui a accepté.
 
-<!-- SOURCE À CITER : valeur juridique d'une lettre remise après le décès au regard du testament, en droit français, avant d'affirmer qu'elle vaut ou ne vaut pas acte. -->
+La lettre parle à un enfant. L'acte qui répartit les biens, s'il existe, fait un autre travail. Une lettre n'est pas, par cela seul, un testament. L'[article 970 du Code civil](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006434065) n'admet comme testament olographe qu'un écrit entièrement manuscrit, daté et signé de la main de son auteur. [Service-public.fr](https://www.service-public.gouv.fr/particuliers/vosdroits/F770) reprend ces conditions : écrit en entier à la main, daté du jour, du mois et de l'année, puis signé. Savoir si votre page les remplit se demande à un notaire.
 
-<!-- SOURCE À CITER : règles relatives à l'ouverture du courrier d'une personne décédée et à la personne habilitée à le remettre, avant de désigner un ayant droit. -->
+Ce guide ne dit pas s'il faut déposer la lettre chez un notaire. Les [notaires de France](https://www.notaires.fr/fr/faq/puis-je-conserver-chez-moi-le-testament-que-je-viens-de-rediger) répondent pour le testament olographe : le garder chez vous n'empêche pas qu'il soit valable. Le leur remettre permet qu'ils le conservent et l'inscrivent au fichier central des dispositions de dernières volontés. Après le décès, si l'écrit est un testament olographe ou mystique, l'[article 1007 du Code civil](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000039368517) prévoit qu'il soit déposé chez un notaire avant d'être exécuté, et ouvert s'il est cacheté. Une lettre qui n'est pas ce testament ne suit pas cette règle. Demandez au notaire s'il garde un pli, et à quelles conditions.
 
-La lettre parle à un enfant. L'acte qui répartit les biens, s'il existe, fait un autre travail. Savoir s'il faut déposer le pli chez un notaire est une question à laquelle ce guide ne répond pas.
-
-<!-- SOURCE À CITER : rôle du notaire dans la conservation d'une lettre ou d'un pli cacheté, avant de recommander ou d'écarter ce dépôt. -->
-
-Gardez deux exemplaires : l'original dans un lieu que vous contrôlez, et une copie ailleurs, afin qu'un dégât ou la fermeture d'un service n'emporte pas le seul texte. S'il y a un fichier, nommez-le pour que le destinataire se reconnaisse sans l'ouvrir. Ce guide ne nomme aucun produit et ne garantit aucune durée de lisibilité.
-
-<!-- SOURCE À CITER : recommandations publiques de pérennité des supports (archives ou ministère de la Culture), avant de nommer un format, un papier ou une durée de lisibilité. -->
+Gardez deux exemplaires : l'original dans un lieu que vous contrôlez, et une copie ailleurs, afin qu'un dégât ou la fermeture d'un service n'emporte pas le seul texte. S'il y a un fichier, nommez-le pour que le destinataire se reconnaisse sans l'ouvrir. Les [Archives nationales](https://www.archives-nationales.culture.gouv.fr/collecter-decrire-conserver-numeriser-perenniser/perenniser) rappellent que les données posées sur une clé, un disque dur ou une disquette se migrent, pour rester lisibles. Ce guide ne nomme aucun format, aucun papier, aucun nombre d'années.
 
 Le [principe de pérennité](/manifeste#principe-4) le rappelle : une mémoire qui n'existe que dans un service dont vous ne maîtrisez pas la durée a la durée de ce service. L'emplacement doit pouvoir s'expliquer en une phrase à la personne qui remettra la page. Relisez lorsque votre critère a changé, datez cette relecture, et retirez ce qui n'est plus vrai.
 
