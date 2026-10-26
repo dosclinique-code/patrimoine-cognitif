@@ -1,7 +1,7 @@
 ---
 title: "Lettre à ses enfants avant sa mort : que leur écrire ?"
 description: "Que dire à ses enfants dans une lettre à lire après sa mort ? Une trame simple en 5 temps, des idées de lettres à échéance et les écueils à éviter."
-date: 2026-11-16
+date: 2026-10-19
 type: Guide
 draft: false
 keyword: "lettre à ses enfants avant sa mort"
