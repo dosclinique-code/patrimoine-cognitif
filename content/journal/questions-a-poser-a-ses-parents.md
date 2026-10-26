@@ -1,9 +1,9 @@
 ---
 title: "Questions à poser à ses parents avant qu'il soit trop tard"
 description: "Les questions à poser à vos parents ou grands-parents pour recueillir souvenirs, choix et valeurs, classées par thème, avec la méthode d'entretien."
-date: 2026-11-30
+date: 2026-10-26
 type: Guide
-draft: true
+draft: false
 keyword: "questions à poser à ses parents"
 ---
 
@@ -33,11 +33,13 @@ La relance tient en peu de mots. *Pourquoi celui-là ? Qu'est-ce que vous proté
 
 Les questions de ce guide sont au vouvoiement. Si vous vous tutoyez, gardez le tutoiement. La forme ne doit pas rendre l'entretien étranger.
 
-Ce guide ne dit pas ce que le droit exige pour enregistrer une personne, ni pour réutiliser sa voix ou ses mots.
+Ce guide ne remplace pas un avis juridique. Il rapporte ce que les textes disent, et s'arrête où ils s'arrêtent.
 
-« SOURCE À CITER » : régime de l'enregistrement d'une conversation privée et de la réutilisation de la voix ou des propos, en droit français, avant d'affirmer ce qui est permis, interdit, ou subordonné à un accord.
+L'[article 226-1 du Code pénal](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000049312755) punit le fait de porter atteinte à l'intimité de la vie privée d'autrui en captant, enregistrant ou transmettant, sans le consentement de leur auteur, des paroles prononcées à titre privé ou confidentiel. Lorsque cet enregistrement a lieu au vu et au su des personnes, sans qu'elles s'y opposent alors qu'elles étaient en mesure de le faire, leur consentement est présumé. L'[article 226-2 du Code pénal](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006417930) punit le fait de conserver, de porter à la connaissance du public ou d'un tiers, ou d'utiliser un enregistrement obtenu à l'aide de l'un de ces actes.
 
-En attendant, tenez la règle de cette méthode : pas d'enregistrement caché. Pas de lecture au repas, pas d'envoi à d'autres, pas de publication, sauf demande claire de la personne.
+L'[article 9 du Code civil](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006419288) dispose que chacun a droit au respect de sa vie privée. Il ne détaille pas, pour une voix ou pour des propos recueillis en famille, ce qu'un accord de parler et un accord d'enregistrer couvrent ensuite : une relecture, un envoi, une publication. Ce guide ne le déduit pas.
+
+La règle de la méthode reste celle-ci : pas d'enregistrement caché. Pas de lecture au repas, pas d'envoi à d'autres, pas de publication, sauf demande claire de la personne.
 
 ## Enfance et origines (questions)
 
@@ -120,17 +122,15 @@ Si vous enregistrez, montrez comment on s'arrête. Rappelez qu'un passage peut �
 
 Gardez ce fichier dans un endroit que vous contrôlez, et une seconde copie dans un autre endroit que vous contrôlez aussi, afin qu'un accident n'emporte pas le seul exemplaire. Le [principe de souveraineté](/manifeste#principe-1) pose la même exigence pour la mémoire d'une lignée : ne pas la remettre à un service mutualisé dont vous ne tenez pas les clés. Ne laissez pas la seule copie sur un tel service.
 
-Ce guide ne nomme aucun format, aucun support, aucune durée pendant laquelle un fichier resterait lisible.
+Les [Archives nationales](https://www.archives-nationales.culture.gouv.fr/collecter-decrire-conserver-numeriser-perenniser/perenniser) décrivent la pérennisation comme les activités nécessaires pour garder un accès aux objets numériques, au-delà de la défaillance des supports et des changements techniques. Pour la lisibilité, elles indiquent de conserver les données sur des supports durables et de migrer celles qui reposent sur des supports fragiles : disquettes, disques durs, clés USB. Pour l'intelligibilité, elles indiquent de conserver la capacité de lire les fichiers, et de convertir un fichier dans un autre format lorsque c'est nécessaire pour en garder le contenu. Leur politique des formats, pour les versements qui leur sont destinés, distingue des formats favorisés, acceptés ou refusés. Cette page ne donne pas un format, un support ou un nombre d'années pour un entretien conservé à la maison. Ce guide n'en nomme aucun.
 
-« SOURCE À CITER » : recommandations publiques de pérennité des formats, auprès d'archives ou du ministère de la Culture, avant de nommer un format, un support ou une durée de lisibilité.
-
-En attendant, ces gestes se décident sans nommer un produit. Mettre le texte ou la copie dans une forme qu'une personne pourra ouvrir sans dépendre d'un seul fournisseur. Séparer les deux copies. Indiquer, sur un papier qu'une personne de confiance sait trouver, où est l'enregistrement et qui peut l'entendre. Revenir assez tôt pour remplacer un support qui ne se lit plus.
+Ces gestes se décident sans nommer un produit. Mettre le texte ou la copie dans une forme qu'une personne pourra ouvrir sans dépendre d'un seul fournisseur. Séparer les deux copies. Indiquer, sur un papier qu'une personne de confiance sait trouver, où est l'enregistrement et qui peut l'entendre. Revenir assez tôt pour remplacer un support qui ne se lit plus.
 
 Transcrivez d'abord le pourquoi : la contrainte, le critère, la limite. Notez les noms, les lieux et les dates sans les rectifier. Marquez ce que vous n'avez pas compris, au lieu de le compléter. Si une autre personne transcrit, il lui faut le même accord, et elle ne garde pas une copie pour elle.
 
-N'envoyez pas le seul enregistrement à un service en ligne pour en obtenir le texte, lorsque vous ne pouvez ni le reprendre ni le faire retirer. Vous ne sauriez plus qui le détient. Ce guide ne décrit pas ce que ces services conservent.
+N'envoyez pas le seul enregistrement à un service en ligne pour en obtenir le texte. Gardez-en une copie dans un endroit que vous contrôlez.
 
-« SOURCE À CITER » : conditions de conservation et de réutilisation des fichiers remis à un service de transcription, d'après une documentation datée, avant d'affirmer ce qu'un service garde, efface ou réemploie.
+La [CNIL](https://www.cnil.fr/fr/definition/donnee-personnelle) définit une donnée personnelle comme toute information se rapportant à une personne identifiée ou identifiable, et cite la voix parmi les moyens de l'identifier. Le [droit d'être informé](https://www.cnil.fr/fr/comprendre-mes-droits/le-droit-detre-informe-sur-lutilisation-de-vos-donnees) prévoit qu'un organisme qui collecte des données personnelles fournisse une notice accessible : l'usage qui en sera fait, les tiers qui y auront accès, la durée de conservation, et la façon d'exercer les droits. Ce guide ne nomme aucun service de transcription, et ne dit pas ce que l'un d'eux conserve, efface ou réemploie. Lisez les conditions d'utilisation et la politique de confidentialité du service que vous choisissez. Si elles ne disent pas qui reçoit le fichier, combien de temps il est gardé, et comment demander qu'il soit retiré, ne le lui confiez pas.
 
 ## Après l'entretien : classer, légender, faire relire
 
